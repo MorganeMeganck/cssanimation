@@ -1,0 +1,30 @@
+body{
+
+}
+#stage{
+background-image: url("images/css_animation_exercise_stage.png");
+width: 600px;
+height: 600px;
+background-repeat: no-repeat;
+background-position: center;
+margin: auto;
+position: relative;
+
+}
+#hero{
+border: 1px dashed red;
+height: 75px;
+width: 75px;
+margin: 4%;
+position: absolute; /* si aucune position indiquée, l'animation ne fonctionne pas*/
+}
+@keyframes line {
+  0%  { left: 0; top: 0;}
+ 25% { left: 470px; top: 0;}
+ 50% { left: 470px; top: 0px;}
+ 75% { left: 0; top: 0px;}
+ 100%{ left: 0; top: 0;}
+}
+div #hero { animation: line 5s linear infinite;
+  animation-name: line;
+}
